@@ -14,10 +14,29 @@ use App\Http\Controllers\AlbumController;
 |
 */
 
+// 4.
+Route::get('/blog/index', function () {
+      return view('pages.blog_index');
+});
+
+Route::get('/blog/album', function () {
+      return view('pages.blog_album');
+});
+
+
+// 3.
+// Route::get('/profile', function () {
+//       return view('profile', ['name' => '陳俊廷']);
+// });
+
+
+// 2.
+// Route::get('/', [AlbumController::class, 'index']);
+
+// Route::get('/album/{id}', [AlbumController::class, 'showAlbumFromID']);
+
+
+// 1.
 // Route::get('/', function () {
 //       return view('welcome');
 // });
-
-Route::get('/', [AlbumController::class, 'index']);
-
-Route::get('/album/{id}', [AlbumController::class, 'showAlbumFromID']);
